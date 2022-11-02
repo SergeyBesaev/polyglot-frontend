@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    padding: 15px;
+    border: 2px solid blue;
+    margin-right: 10px;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.home {
+    display: flex;
+    padding: 15px;
+    border: 2px solid blue;
+    margin-right: 10px;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.lessons {
+    width: 100%;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.dictionary {
+    display: flex;
+    padding: 15px;
+    border: 2px solid blue;
+    margin-right: 10px;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.dictations {
+    display: flex;
+    padding: 15px;
+    border: 2px solid blue;
+    margin-right: 10px;
+    justify-content: start;
+    align-items: flex-end;
+}
