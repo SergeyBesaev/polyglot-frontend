@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import axios from "axios";
-import TranslateForm from "../translate.form";
+import React, {useState} from 'react'
+import axios from "axios"
+import TranslateFormEngRus from "../translate.form.eng.rus"
 
 const Verbs = () => {
 
@@ -21,7 +21,7 @@ const Verbs = () => {
             <h3>{description}</h3>
             {words.length === 0
                 ? <button onClick={getWordsFromServer}>Start lesson</button>
-                : <TranslateForm words={words}/>
+                : <TranslateFormEngRus words={words}/>
             }
         </div>
     );

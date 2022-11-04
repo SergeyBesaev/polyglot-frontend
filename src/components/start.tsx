@@ -1,5 +1,5 @@
 import React from 'react';
-import TranslateForm from "./translate.form"
+import TranslateFormRusEng from "./translate.form.rus.eng"
 
 const Start = ({...props}) => {
 
@@ -7,7 +7,7 @@ const Start = ({...props}) => {
         <div>
             <h1>{props.title}</h1>
             <h2>{props.description}</h2>
-            <TranslateForm words={props.words}/>
+            <TranslateFormRusEng words={props.words}/>
         </div>
     );
 };

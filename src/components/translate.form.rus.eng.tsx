@@ -4,11 +4,10 @@ import Result from "./result";
 import {Button} from 'react-bootstrap';
 import {delay} from "../util/util";
 
-const TranslateForm = ({...props}) => {
+const TranslateFormRusEng = ({...props}) => {
 
     const words: WordForm[] = props.words as WordForm[]
     let wordsLength: number = words.length
-
 
     let [countPassedWords, setCountPassedWords] = useState(-1)
     let [countSkip, setCountSkip] = useState(0)
@@ -108,4 +107,4 @@ const TranslateForm = ({...props}) => {
     );
 };
 
-export default TranslateForm;
+export default TranslateFormRusEng;
