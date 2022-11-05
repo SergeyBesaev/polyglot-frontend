@@ -75,8 +75,6 @@ const Result = ({...props}) => {
                     </Card.Footer>
                 </Card>
             </CardGroup>
-            <button>Повторить урок</button>
-            <button>Перейти к следующему уроку</button>
         </>
     );
 };

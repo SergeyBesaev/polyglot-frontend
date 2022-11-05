@@ -62,7 +62,7 @@ const TranslateFormRusEng = ({...props}) => {
             setInputWord('')
             setSuccessCheck('')
         } else {
-            setInputWord('end')
+            setInputWord('end111')
         }
     }
 
@@ -72,13 +72,13 @@ const TranslateFormRusEng = ({...props}) => {
     }
 
     function finishLesson() {
-        setInputWord('end')
+        setInputWord('end111')
     }
 
     return (
 
         <div>
-            {inputWord !== 'end'
+            {inputWord !== 'end111'
                 ?
                 <div>
                     <h1>{checkWord.rus}</h1>
