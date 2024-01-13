@@ -81,9 +81,9 @@ const TranslateFormRusEng = ({...props}) => {
             {inputWord !== 'end111'
                 ?
                 <div>
-                    <h1>{checkWord.rus}</h1>
+                    <h3>{checkWord.rus}</h3>
                     {!isClickMouse
-                        ? <h4>*****</h4>
+                        ? <h3><i>*****</i></h3>
                         : <h4><i>{checkWord.eng}</i></h4>
                     }
                     <input
@@ -99,6 +99,8 @@ const TranslateFormRusEng = ({...props}) => {
                     <h5>{successCheck}</h5>
                     <p/>
                     <h5>Пройдено: {countPassedWords}. Осталось: {wordsLength}</h5>
+                    <p/>
+                    <p>Примеры: <i>{checkWord.examples}</i></p>
                 </div>
                 : <Result countAllWords={countPassedWords} countSuccessfully={countSuccessfully} countSkip={countSkip}
                           countWithPrompting={countWithPrompting}/>

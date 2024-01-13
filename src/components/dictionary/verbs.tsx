@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from "axios"
-import TranslateFormEngRus from "../translate.form.eng.rus"
+import TranslateFormRusEng from "../translate.form.rus.eng";
 
 const Verbs = () => {
 
@@ -21,7 +21,8 @@ const Verbs = () => {
             <h3>{description}</h3>
             {words.length === 0
                 ? <button onClick={getWordsFromServer}>Start lesson</button>
-                : <TranslateFormEngRus words={words}/>
+                // eslint-disable-next-line react/jsx-no-undef
+                : <TranslateFormRusEng words={words}/>
             }
         </div>
     );

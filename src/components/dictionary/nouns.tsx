@@ -70,7 +70,7 @@ const Nouns = () => {
     return (
         <div>
             <h1><a href='/dictionary/nouns'>{title}</a></h1>
-            <br/>
+            <h5>Category: {partValue}</h5>
             <br/>
             <br/>
             {words.length === 0

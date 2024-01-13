@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios";
 import TranslateFormRusEng from "../translate.form.rus.eng";
 import {Button} from "react-bootstrap";
+import TranslateFormEngRus from "../translate.form.eng.rus";
 
 const Lesson1 = () => {
 
@@ -30,7 +31,7 @@ const Lesson1 = () => {
                         <Button onClick={getWordsFromServer}>Start</Button>
                     </div>
                 </div>
-                : <TranslateFormRusEng words={words}/>
+                : <TranslateFormEngRus words={words}/>
             }
 
         </div>

@@ -5,7 +5,6 @@ import TranslateFormRusEng from "../translate.form.rus.eng";
 const Pronouns = () => {
 
     const title: string = 'Местоимения'
-    const description: string = 'Здесь собраны местоимения английского языка'
     let [words, setWords] = useState([])
 
     const url: string = 'http://localhost:8080/dictionary/pronouns'
@@ -18,7 +17,8 @@ const Pronouns = () => {
     return (
         <div>
             <h1>{title}</h1>
-            <h3>{description}</h3>
+            <br/>
+            <br/>
             {words.length === 0
                 ? <button onClick={getWordsFromServer}>Start lesson</button>
                 : <TranslateFormRusEng words={words}/>
